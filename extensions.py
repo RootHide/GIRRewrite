@@ -23,7 +23,6 @@ initial_extensions = [
     "cogs.monitors.mod.antiraid",
     "cogs.monitors.mod.logging",
     "cogs.monitors.mod.filter",
-    "cogs.monitors.mod.sabbath",
     "cogs.monitors.mod.unban_appeals",
     "cogs.monitors.utils.applenews",
     "cogs.monitors.utils.birthday",
