@@ -20,46 +20,34 @@ async def setup():
     guild.case_id      = 1
 
     # required for permissions framework!
-    guild.role_administrator = 123  # put in the role IDs for your server here
-    guild.role_moderator     = 123  # put in the role IDs for your server here
-    guild.role_birthday      = 123  # put in the role IDs for your server here
-    guild.role_sub_mod       = 123  # put in the role IDs for your server here
-    guild.role_genius        = 123  # put in the role IDs for your server here
-    guild.role_dev           = 123  # put in the role IDs for your server here
-    guild.role_memberone     = 123  # put in the role IDs for your server here
-    guild.role_memberedition = 123  # put in the role IDs for your server here
-    guild.role_memberpro     = 123  # put in the role IDs for your server here
-    guild.role_memberplus    = 123  # put in the role IDs for your server here
-    guild.role_memberultra   = 123  # put in the role IDs for your server here
+    guild.role_administrator = 1156629535656255542
+    guild.role_moderator     = 1191601804606197860
+    guild.role_birthday      = 1191604372652695643
+    guild.role_genius        = 1190914822032855090
+    guild.role_dev           = 1155579868772302939
+    guild.role_memberone     = 1191604006594822195
+    guild.role_memberedition = 1160485769207615578
+    guild.role_memberpro     = 1191603410710040577
+    guild.role_memberplus    = 1191603483804172368
+    guild.role_memberultra   = 1191604141680767095
 
-    # not required if you don't want the /subnews command
-    guild.role_sub_news      = 123  # put in the role IDs for your server here
-
-    guild.channel_reports        = 123  # put in the channel IDs for your server here
+    guild.channel_reports        = 1191604871690981386
     # channel where reactions will be logged
-    guild.channel_emoji_log      = 123  # put in the channel IDs for your server here
+    guild.channel_emoji_log      = 1191605083549487154
     # channel for private mod logs
-    guild.channel_private        = 123  # put in the channel IDs for your server here
-    # channel where self-assignable roles will be posted
-    guild.channel_reaction_roles = 123  # put in the channel IDs for your server here
+    guild.channel_private        = 1191605192957890653
     # rules-and-info channel
-    guild.channel_rules          = 123  # put in the channel IDs for your server here
-    # not required
-    guild.channel_applenews      = 123  # put in the channel IDs for your server here
+    guild.channel_rules          = 1162752219632914432
     # channel for public mod logs
-    guild.channel_public         = 123 # put in the channel IDs for your server here
-    # optional, used for /subnrews command or something
-    guild.channel_subnews        = 123  # put in the channel IDs for your server here
+    guild.channel_public         = 1191605566137716766
     # optional, required for /issue command
-    guild.channel_common_issues  = 123  # put in the channel IDs for your server here
+    guild.channel_common_issues  = 1159085637501202513
     # #general, required for permissions
-    guild.channel_general        =  123 # put in the channel IDs for your server here
+    guild.channel_general        = 1190912735228199033
     # required for filter
-    guild.channel_development    = 123  # put in the channel IDs for your server here
+    guild.channel_development    = 1190879087045115974
     # required, #bot-commands channel
-    guild.channel_botspam        = 123  # put in the channel IDs for your server here
-    # optional, needed for booster #emote-suggestions channel
-    guild.channel_booster_emoji  = 123  # put in the channel IDs for your server here
+    guild.channel_botspam        = 1191605893717053540
 
     # you can fill these in if you want with IDs, or you ca use commands later
     guild.logging_excluded_channels = []  # put in a channel if you want (ignored in logging)
