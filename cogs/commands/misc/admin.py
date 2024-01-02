@@ -21,18 +21,6 @@ class Admin(commands.Cog):
         await self.bot.user.edit(avatar=await image.read())
         await ctx.send_success("Done!", delete_after=5)
 
-    @guild_owner_and_up()
-    @app_commands.guilds(cfg.guild_id)
-    @app_commands.command(description="Show message when Aaron is pinged on Sabbath")
-    @app_commands.describe(mode="Set mode on or off")
-    @transform_context
-    async def sabbath(self, ctx: GIRContext, mode: bool = None):
-        g = guild_service.get_guild()
-        g.sabbath_mode = mode if mode is not None else not g.sabbath_mode
-        g.save()
-
-        await ctx.send_success(f"Set sabbath mode to {'on' if g.sabbath_mode else 'off'}!")
-
     @commands.command()
     @commands.is_owner()
     async def sync(self, ctx: commands.Context):
