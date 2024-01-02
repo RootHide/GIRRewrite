@@ -9,13 +9,13 @@ from utils.config import cfg
 class Permissions:
     """A way of calculating a user's permissions.
     Level 0 is everyone.
-    Level 1 is people with Member+ role
-    Level 2 is people with Member Pro role
-    Level 3 is people with Member Edition role
-    Level 4 is people with Genius role
+    Level 1 is people with Bootstrapper role
+    Level 2 is people with Jailbreaker role
+    Level 3 is people with RootHider role
+    Level 4 is people with Helper role
     Level 5 is people with Moderator role
     Level 6 is Admins
-    Level 7 is the Guild owner (Aaron)
+    Level 7 is the Guild owner
     Level 9 and 10 is the bot owner
 
     """
@@ -93,13 +93,13 @@ class Permissions:
 
         self._permission_names = {
             0: "Everyone and up",
-            1: "Member Plus and up",
-            2: "Member Pros and up",
-            3: "Member Editions and up",
-            4: "Geniuses and up",
+            1: "Bootstrappers and up",
+            2: "Jailbreakers and up",
+            3: "RootHiders and up",
+            4: "Helpers and up",
             5: "Moderators and up",
             6: "Administrators and up",
-            7: "Guild owner (Aaron) and up",
+            7: "Guild owner and up",
             9: "Bot owner",
             10: "Bot owner",
         }
