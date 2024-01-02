@@ -41,7 +41,7 @@ class Memes(commands.Cog):
         self.memegen_cooldown = CooldownMapping.from_cooldown(
             1, 45, MessageTextBucket.custom)
         self.meme_phrases = ["{user}, have a look at this funny meme! LOL!", "Hey, {user}. Have a look at this knee-slapper!",
-                             "{user}, look at this meme! Just don't show Aaron.", "{user} 😂😂😂😂😭😭😭😭"]
+                             "{user}, look at this meme!", "{user} 😂😂😂😂😭😭😭😭"]
         self.snipe_cache = {}
 
     @app_commands.guilds(cfg.guild_id)
